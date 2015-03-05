@@ -1,0 +1,21 @@
+V1.0.40612 -- 刘艳云
+修改推送为可靠推送；增加银衍接口
+V1.0.41128 -- 刘艳云
+增加结算信息确认、客户交易级别、限购限仓额度、历史委托报单查询等接口
+V1.0.50113 -- 刘艳云
+增加合约基础商品乘数、非交易委托单状态类型、查非交易报单量中品种代码等
+V1.0.50303 -- 沈明明&刘艳云
+头文件接口调整:
+ReqNonTradingOrderInsert拆分为ReqExecOrderInsert&ReqLockInsert
+ReqNonTradingOrderAction变动为ReqExecOrderAction
+ReqQryNonTradingOrderVolume拆分为ReqQryExecOrderVolume&ReqQryLockPosition
+ReqQryNonTradingOrder拆分为ReqQryExecOrder&ReqQryLock
+OnRspNonTradingOrderInsert拆分为OnRspExecOrderInsert&OnRspLockInsert
+OnRspNonTradingOrderAction变动为OnRspExecOrderAction
+OnRspQryNonTradingOrderVolume拆分为OnRspQryExecOrderVolume&OnRspQryLockPosition
+OnRspQryNonTradingOrder拆分为OnRspQryExecOrder&OnRspQryLock
+OnRtnNonTradingOrder拆分为OnRtnExecOrder&OnRtnLock
+ReqQryOTPInsMarginRate变动为ReqQryInstrumentMarginRate
+OnRspQryOTPInsMarginRate变动为OnRspQryInstrumentMarginRate
+接口相应结构体变动，请参考头文件
+发布包目录结构调整时，库文件名及头文件名并未做改动。
